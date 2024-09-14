@@ -18,14 +18,38 @@
 // Reference(Non-Primitive)
 //Array,Objects,Functions
 
-const heros = ['shaktiman','bheem','doreamon'];
-let myObj = {
-    name:"Jagriti",
-    age:19,
+// const heros = ['shaktiman','bheem','doreamon'];
+// let myObj = {
+//     name:"Jagriti",
+//     age:19,
+// }
+
+// const myFunction = function(){
+//     console.log("Hello,World!");
+// }
+
+// console.log(typeof heros);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Memory
+//Stack(Primitive), Heap(Non-Primitive)
+
+let myName = "Jagriti Rai"
+let anotherName = myName
+anotherName = "CupCake"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"user@ybl"
 }
 
-const myFunction = function(){
-    console.log("Hello,World!");
-}
+let userTwo=userOne
+userTwo.email = "jagriti@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
 
-console.log(typeof heros);
